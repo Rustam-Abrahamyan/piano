@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Piano</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        button.play-button {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 10px;
+            z-index: 99;
+            display: block;
+            width: 100px;
+            height: 50px;
+            background: #fff;
+            font-size: 18px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        button.play-button.isPlaying {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./src/js/three_and_adjust.min.js"></script>
+    <script src="./src/js/musicData.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
